@@ -2,26 +2,73 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  line-height: 1.616;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  display: flex;
+  min-height: 100vh;
+  background: #ffffff;
+}
+.container {
+  background: #fb7c32;
+  display: flex;
+  height: 100vh;
+  margin: auto;
+  padding: 1em 0;
+}
+#svg {
+  display: block;
+  margin-top: 0;
+  width: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
+
+.togu{
+  position: fixed;
+  
+}
+
+#footer {
+  margin: auto;
+  position: fixed;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  max-width: 900px;
+  min-height: 80px;
+  padding: 25px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px 15px 0 0;
+  background: rgba(96, 96, 96, 0.159);
+  backdrop-filter: blur(10px);
+  font-size: 22px;
+}
+
+.faq-button{
+  font-weight: 1400;
+}
+
+p {
+  color: #eee;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  font-size: 15px;
+}
+
+.chacha{
+  width: 100%;
+  position: fixed;
+  bottom:50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
